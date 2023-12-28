@@ -12,6 +12,6 @@ public class LowestCommonAncestor {
         else if(right == null)
             return left;
         else
-            return root;
+            return root; //if both are not null , means root is LCA
     }
 }
