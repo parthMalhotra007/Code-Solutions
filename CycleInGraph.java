@@ -40,7 +40,7 @@ public class CycleInGraph {
             }
 
             if (visited[v]) {
-                return false; // Already visited node
+                return false; // Already visited node If a node is already visited (visited[v] is true), it means that the DFS has already explored that node, and there is no need to continue exploring it again from the current path. Therefore, the function returns false, indicating that no cycle has been detected from the current node.
             }
 
             visited[v] = true;
