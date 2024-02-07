@@ -2,7 +2,7 @@ public class RemoveOneLetter {
 
     public String removeLetter(String s, int x)
     {
-        if(s == null && s.isEmpty())
+        if(s == null || s.isBlank())
         {
             return " ";
         }
