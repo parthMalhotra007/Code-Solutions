@@ -22,9 +22,10 @@ public class ReverseAString {
 
     public  String reverseEff(String input) // Constant time and efficient
     {
-        String[] substrings = input.split(" ");
+        String[] substrings = input.trim().split("\\s+"); // regex for spaces in between words
         Collections.reverse(Arrays.asList(substrings));
         return String.join(" " , substrings);
+
     }
 
     public static void main(String[] args) {
