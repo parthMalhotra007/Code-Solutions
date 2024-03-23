@@ -38,4 +38,12 @@ public class DuplicateInArray {
         return  slow;
 
     }
+
+    public static void main(String[] args) {
+        DuplicateInArray duplicateInArray = new DuplicateInArray();
+        int [] A = {1,2,1,1,3};
+        int x = duplicateInArray.findDuplicate(A);
+        System.out.println(x);
+    }
+
 }
